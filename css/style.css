@@ -1,0 +1,79 @@
+
+/* Fonts */
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.ttf");
+    font-weight: 600;
+  }
+
+  /* Variables */
+
+  :root {
+    --text-dark: #403F3D;
+    --text-light: #E1D4C9;
+    --text-accent: #B0907A;
+    --background-body: #E1D4C9;
+    --background-container: #665F55;
+    --background-backdrop: #403F3DCC;
+    --border-light: #C1B6AD;
+    --border-dark: #665F55;
+  }
+
+  /* Global */
+
+  .page{
+    scroll-behavior: smooth;
+
+  }
+
+  .page__body {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: var(--background-body);
+    color: var(--text-dark);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    font:inherit;
+    border-radius: 100px;
+    text-align: center;
+  }
+
+  /* Header */
+
+  .header-nav__items,
+  .footer__socials-items,
+  .footer__contacts-items,
+  .favorite__sliders-items,
+  .menu_sort-items,
+  .menu__gallery-items {
+    list-style:none;
+  }
+
+  /* Footer */
+
+  .footer__contacts-phone,
+  .footer__contacts-map {
+    color: inherit;
+  }
