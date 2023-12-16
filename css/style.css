@@ -33,10 +33,10 @@
 
   }
 
-  .page__body {
-    /* display: flex;
+  .page-body {
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
     background-color: var(--background-body);
     color: var(--text-dark);
     font-family: "Inter";
@@ -47,6 +47,9 @@
 
   a {
     text-decoration: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    background-color: transparent;
   }
 
   img {
@@ -54,11 +57,23 @@
     height: auto;
   }
 
+  h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+  }
+
   .btn {
     font:inherit;
     border-radius: 100px;
     text-align: center;
+    background-color: transparent;
   }
+
+  .text-italic{
+    color: var(--text-accent);
+    font-style: italic;
+  }
+
 
   /* Header */
 
@@ -69,11 +84,202 @@
   .menu_sort-items,
   .menu__gallery-items {
     list-style:none;
+
+  }
+
+  .header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .header-nav__items{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+  }
+
+  .nav__item {
+    color: #403F3D;
+    line-height: 150%;
+  }
+
+  /* Enjoy section */
+
+  .enjoy__title{
+    font-size: 72px;
+    line-height: 105%;
+    color: var(--text-light);
+  }
+
+  .enjoy__desc{
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--text-light);
+  }
+
+  .enjoy__button-menu{
+    line-height: 150%;
+    background-color: var(--background-body);
+    padding: 20px 78px;
+  }
+
+/* Favourite section */
+
+  .favorite__title{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .favorite__card-title{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .favorite__card-desc{
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .favorite__card-price{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* About section */
+
+  .about__title{
+    font-size: 60px;
+    line-height: 125%;
+
+  }
+
+  /* MobileApp section */
+
+  .mobileApp__wrapper{
+    display: flex;
+    gap: 100px;
+  }
+
+  .mobileApp__title{
+    font-size: 60px;
+
+  }
+
+  .mobileApp__text{
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .mobileApp__btn-text-small{
+    font-size: 10px;
+    line-height: 140%;
+  }
+
+  .mobileApp__btn-text-big{
+    line-height: 150%;
   }
 
   /* Footer */
 
+  .footer__wrapper{
+    background: var(--background-container);
+    border-radius: 40px;
+    padding: 100px;
+    display: flex;
+    gap: 100px;
+  }
+
+  .footer__socials-title{
+    font-size: 60px;
+    color: var(--text-light);
+  }
+
+  .footer__contacts-title{
+    font-size: 24px;
+    color: var(--text-light);
+  }
+
+  .footer__contacts-items{
+    color: var(--text-light);
+    line-height: 150%;
+  }
+
   .footer__contacts-phone,
   .footer__contacts-map {
     color: inherit;
+  }
+
+
+  /* Menu section*/
+  .menu{
+    margin: 20px 0 100px;
+    gap: 40px;
+  }
+  .menu__title{
+    font-size: 60px;
+  }
+
+  .menu_sort-items{
+    display: flex;
+    gap: 16px;
+  }
+
+  .menu_sort-btn{
+    line-height: 150%;
+    border: 1px solid var(--Border-Light, #C1B6AD);
+    padding: 8px 16px 8px;
+    height: 46px;
+  }
+
+  .menu_sort-btn img{
+    border-radius: 100px;
+    background-color: var(--Border-Light, #C1B6AD);
+    padding: 3px 7px;
+  }
+
+  .menu_sort-btn--current{
+    background-color: var(--background-container);
+    color: var(--text-light);
+  }
+
+  .menu_sort-btn--current img{
+    border-radius: 100px;
+    background-color: var(--background-body);
+    padding: 3px 7px;
+  }
+
+  /* menu gallery */
+
+  .menu__gallery-items{
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+  }
+
+  .menu__gallery-item{
+    height: 506px;
+    border-radius: 40px;
+    border: 1px solid var(--Border-Light, #C1B6AD);
+  }
+
+  .menu__item-title{
+    font-size: 24px;
+  }
+
+  .menu__item-description{
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .menu__item-price{
+    font-size: 24px;
   }

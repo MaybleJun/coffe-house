@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee-house</title>
-    <link href="css/style.css" type=""/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" href="favicon.ico"/>
     <link rel="icon" href="img/favicon/32.png"/>
     <link rel="apple-touch-icon" href="img/favicon/180.png"/>
@@ -14,7 +14,7 @@
     <div class="container-main">
         <header class="header">
             <nav class="header-nav">
-                <a class="header-nav__logo" href="index.html">
+                <a class="header-nav__logo">
                     <img class="header-nav__logo-img" src="./img/logo.png" width="100px" height="60px" alt="coffee-shop logo"/>
                 </a>
                 <ul class="header-nav__items">
@@ -23,7 +23,7 @@
                     <li class="nav__item"><a href="#">Mobile app</a></li>
                     <li class="nav__item"><a href="#">Contact us</a></li>
                 </ul>
-                <a class="header-nav__menu-link">Menu
+                <a class="header-nav__menu-link" href="menu.html">Menu
                     <img class="menu-link__icon" src="./img/coffee-cup.svg" width="20px" height="20px" alt="coffee-cup"/>
                 </a>
             </nav>
@@ -33,13 +33,22 @@
                 <h1 class="menu__title">Behind each of our cups hides an <span class="text-italic">amazing surprise </span></h1>
                 <ul class="menu_sort-items">
                     <li class="menu_sort-item">
-                        <button class="menu_sort-btn btn">Coffee</button>
+                        <button class="menu_sort-btn btn menu_sort-btn--current">
+                          <img class="menu_sort-icon" src="./img/coffee-icon.png" alt="coffee-icon"/>
+                          Coffee
+                        </button>
                     </li>
                     <li class="menu_sort-item">
-                        <button class="menu_sort-btn btn">Tea</button>
+                        <button class="menu_sort-btn btn">
+                          <img class="menu_sort-icon" src="./img/tea-icon.png" alt="tea-icon"/>
+                          Tea
+                        </button>
                     </li>
                     <li class="menu_sort-item">
-                        <button class="menu_sort-btn btn">Dessert</button>
+                        <button class="menu_sort-btn btn">
+                          <img src="./img/desert-icon.png" alt="desert-icon"/>
+                          Dessert
+                        </button>
                     </li>
                 </ul>
                 <div class="menu_gallery">
