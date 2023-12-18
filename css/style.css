@@ -245,10 +245,27 @@
 
   /* About section */
 
+  .about{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
   .about__title{
     font-size: 60px;
     line-height: 125%;
+  }
 
+  .about__gallery{
+    display: grid;
+    gap: 40px;
+
+  }
+
+  .about__gallery-column{
+    display: grid;
+    grid-template-columns: ;
   }
 
   /* MobileApp section */
@@ -256,10 +273,20 @@
   .mobileApp__wrapper{
     display: flex;
     gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .mobileApp__desc-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 40px;
   }
 
   .mobileApp__title{
     font-size: 60px;
+    line-height: 125%;
 
   }
 
@@ -268,9 +295,24 @@
     line-height: 150%;
   }
 
+  .mobileApp__btns{
+    display: flex;
+    gap: 20px;
+  }
+
+  .mobileApp__btn{
+    display: flex;
+    width: 200px;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 20px;
+    border: 1px solid var(--Border-Dark, #665F55);
+  }
+
   .mobileApp__btn-text-small{
     font-size: 10px;
     line-height: 140%;
+    text-align: left;
   }
 
   .mobileApp__btn-text-big{
@@ -375,17 +417,24 @@
   }
 
   .menu_sort-btn{
+    display: flex;
     line-height: 150%;
     border: 1px solid var(--Border-Light, #C1B6AD);
-    padding: 8px 16px 8px;
+    padding: 8px 16px 8px 8px;
     height: 46px;
     width: max-content;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
   }
 
   .menu_sort-btn img{
+    display: flex;
     border-radius: 100px;
     background-color: var(--Border-Light, #C1B6AD);
-    padding: 3px 7px;
+    padding: 7px 7px;
+    width: 30px;
+    height: 30px;
   }
 
   .menu_sort-btn--current{
@@ -397,7 +446,7 @@
     display: flex;
     border-radius: 100px;
     background-color: var(--background-body);
-    padding: 3px 7px;
+    padding: 7px 7px;
   }
 
   /* menu gallery */
@@ -447,6 +496,7 @@
     padding: 20px;
     gap: 12px;
     width: 100%;
+    height: 114px;
     align-items: flex-start;
   }
 
@@ -463,7 +513,7 @@
   .menu__item-price{
     font-size: 24px;
     line-height: 125%;
+    margin-top: 12px;
     margin-bottom: 20px;
-    text-align: left;
     margin: 0 20px 20px;
   }
