@@ -23,8 +23,11 @@
                     <li class="nav__item"><a href="#app">Mobile app</a></li>
                     <li class="nav__item"><a href="#contacts">Contact us</a></li>
                 </ul>
-                <a class="header-nav__menu-link" href="menu.html">Menu
+                <a class="header-nav__menu-link" href="menu.html">
+                  <div class="header-nav__menu-wrapper">
+                    <h3>Menu</h3>
                     <img class="menu-link__icon" src="./img/coffee-cup.svg" width="20" height="20" alt="coffee-cup"/>
+                  </div>
                 </a>
             </nav>
         </header>
@@ -77,11 +80,11 @@
                         </svg>
                     </button>
                   </div>
-                  <ul class="favorite__sliders-items">
-                        <li class="favorite__slider current-slider"></li>
-                        <li class="favorite__slider"></li>
-                        <li class="favorite__slider"></li>
-                  </ul>
+                  <div class="favorite__sliders-items">
+                        <button class="favorite__slider current-slider" type="button" aria-label="First slide"></button>
+                        <button class="favorite__slider" type="button" aria-label="Secondslide"></button>
+                        <button class="favorite__slider"type="button" aria-label="Third slide"></button>
+                  </div>
                 </div>
             </section>
             <section class="about" id="about">
